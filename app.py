@@ -6,7 +6,7 @@ st.set_page_config(page_title="AI Applied Analyzer", page_icon="🤖", layout="c
 
 # 2. Initialize Groq Client
 # Replace "YOUR_GROQ_API_KEY" with your actual key
-client = Groq(api_key="")
+client = Groq(api_key=st.secrets["GROQ_API_KEY"])
 
 # 3. UI Design (English Only)
 st.title("🤖 AI Smart Document Analyzer")
